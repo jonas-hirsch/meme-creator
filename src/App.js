@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Meme } from '../src/components/Meme';
+import { Switch, Route } from 'react-router-dom'
+import MemesGenerated from './MemesGenerated/MemesGenerated';
 
-function App() {
+
+// import styles from './styles.module.css';
+
+ const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Meme Generator</h1>
+      <Switch>
+      <Route exact path='/'>
+        <Meme />
+      </Route>
+      <Route path='/generated'>
+        <MemesGenerated/>
+      </Route>
+    </Switch>
     </div>
   );
 }

@@ -1,0 +1,41 @@
+.container {
+  padding: 0;
+  margin: 100px auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.memes-container {
+  width: 100%;
+}
+
+button.skip {
+  background-color: brown;
+  cursor: pointer;
+  display: block;
+  width: 350px;
+  padding: 10px;
+  margin: 20px auto;
+  margin-bottom: 15px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+button.generate {
+  background-color: tomato;
+  cursor: pointer;
+  display: block;
+  width: 350px;
+  padding: 10px;
+  margin: 20px auto;
+  margin-bottom: 15px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+img {
+  margin-bottom: 10px;
+}

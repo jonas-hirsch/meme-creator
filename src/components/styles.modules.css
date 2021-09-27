@@ -1,0 +1,40 @@
+.container {
+  margin-top: 10vh;
+  margin-bottom: 100px;
+}
+.skip {
+  background-color: #f0ad4e;
+  cursor: pointer;
+  display: block;
+  width: 350px;
+  padding: 10px;
+  margin: 20px auto;
+  margin-bottom: 15px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+.generate {
+  background-color: #0275d8;
+  cursor: pointer;
+  display: block;
+  width: 350px;
+  padding: 10px;
+  margin: 20px auto;
+  margin-bottom: 15px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+.Upload {
+  background-color: #f0ad4e;
+  cursor: pointer;
+  display: block;
+  width: 350px;
+  padding: 10px;
+  margin: 20px auto;
+  margin-bottom: 15px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
