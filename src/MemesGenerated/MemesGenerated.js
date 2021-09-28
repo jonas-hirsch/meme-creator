@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useHistory, useLocation } from 'react-router';
 import styles from './styles.module.css';
 import { useClipboard } from 'use-clipboard-copy';
+import {SocialIcon} from "react-social-icons"
+
 
 const MemesGenerated = () => {
 
@@ -27,6 +29,11 @@ const MemesGenerated = () => {
             <button onClick={() => history.push('/')} className={styles.home}>
                 Make more Memes
             </button>
+            <div className={styles.SocialMediaWrapper}>
+              <SocialIcon network="twitter" url={`http://twitter.com/share?text=${"Check This Out!"}&url=${url}` } target="_blank" style={{margin: 5}} />
+              <SocialIcon network="facebook" url={`http://www.facebook.com/sharer.php?u=${url}`}  target="_blank" style={{margin: 5}} />
+              <SocialIcon network="pinterest" url={`http://pinterest.com/pin/create/button/?url=${url}&description=${"Check This Out!"}`} target="_blank" style={{margin: 5}} />              
+            </div>
         </div>
     )
 }
